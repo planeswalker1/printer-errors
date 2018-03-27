@@ -1,0 +1,2 @@
+baseurl: /printer-errors
+exclude: ['README.md']
