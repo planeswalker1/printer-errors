@@ -1,6 +1,51 @@
 ---
 layout: default
-title-after: Code Wars problem
+title-after: Codewars problem
 ---
 
 <h1>Printer Errors</h1>
+<div class="box">
+  <code><pre><span class="color--purple">function</span> <span class="color--blue">printErrors</span>(string) {
+  <span class="color--gray">// your code</span>
+
+  <span class="color--gray">// split string at every character</span>
+  <span class="color--purple">let</span> stringArray <span class="color--light-blue">=</span> <span class="color--light-blue">string</span>.<span class="color--red">split</span>(<span class="color--green">""</span>);
+
+  <span class="color--gray">// var to show what characters are allowed</span>
+  <span class="color--purple">let</span> correctLetters <span class="color--light-blue">=</span> <span class="color--green">'abcdefghijklm'</span>;
+
+  <span class="color--gray">// error counter var</span>
+  <span class="color--purple">let</span> errorCounter <span class="color--light-blue">=</span> <span class="color--orange">0</span>;
+
+  <span class="color--gray">// loop through stringArray and check if
+    its a valid character</span>
+  <span class="color--red">stringArray</span>.<span class="color--light-blue">forEach</span>(<span class="color--purple">function</span>(letter) {
+    <span class="color--purple">if</span> (<span class="color--red">correctLetters</span>.<span class="color--light-blue">indexOf</span>(letter) <span class="color--light-blue">==</span> <span class="color--orange">-1</span>) {
+      errorCounter<span class="color--light-blue">++</span>;
+    }
+  });
+
+  <span class="color--gray">// return error count and length of string</span>
+  <span class="color--purple">return</span> errorCounter <span class="color--light-blue">+</span> <span class="color--green">'/'</span> <span class="color--light-blue">+</span> <span class="color--red">stringArray.length</span>;
+
+  }
+
+  <span class="color--purple">let</span> string1 = <span class="color--green">"aaabbbbhaijjjm"</span>;
+
+  <span class="color--yellow">console</span>.<span class="color--light-blue">log</span>(<span class="color--blue">printErrors</span>(string1));
+
+  <span class="color--purple">let</span> string2 = <span class="color--green">"aaaxbbbbyyhwawiwjjjwwm"</span>;
+
+  <span class="color--yellow">console</span>.<span class="color--light-blue">log</span>(<span class="color--blue">printErrors</span>(string2));
+  <pre><code>
+  <a class="button">Run Code</a>
+</div>
+<p>
+  solutions:
+</p>
+<p>
+  <code class="solution1"></code>
+</p>
+<p>
+  <code class="solution2"></code>
+</p>
